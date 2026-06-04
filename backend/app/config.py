@@ -2,13 +2,13 @@ from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):
-    DATABASE_URL: str = "postgresql://postgres:postgres@localhost:5432/inventory_db"
+    DATABASE_URL: str = ""
     APP_NAME: str = "Inventory & Order Management API"
     APP_VERSION: str = "1.0.0"
     DEBUG: bool = False
-    ADMIN_USERNAME: str = "admin"
-    ADMIN_PASSWORD: str = "admin123"
-    JWT_SECRET: str = "change-this-secret-key-in-production"
+    ADMIN_USERNAME: str = ""
+    ADMIN_PASSWORD: str = ""
+    JWT_SECRET: str = ""
     JWT_ALGORITHM: str = "HS256"
     JWT_EXPIRATION_HOURS: int = 24
 
